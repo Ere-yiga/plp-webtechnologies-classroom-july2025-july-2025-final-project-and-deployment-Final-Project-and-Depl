@@ -1,4 +1,68 @@
-/* Contact form inputs: only bottom border */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .main-header,
+  header {
+    padding: 1.2rem 2rem;
+  }
+  .site-title,
+  .lg {
+    font-size: 2rem;
+  }
+  .nav-list,
+  ul {
+    gap: 2rem;
+    font-size: 1.3rem;
+  }
+  .about-me {
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: center;
+  }
+  .me-pic,
+  .proj_pic {
+    width: 400px;
+    max-width: 35vw;
+    height: auto;
+  }
+  .me-ere,
+  .about-subtitle {
+    font-size: 1.5rem;
+    text-align: left;
+    padding: 0 2.5rem;
+  }
+  .skills-list,
+  .skills {
+    flex-direction: row;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  .skill {
+    font-size: 1.2rem;
+    padding: 1.5rem 2rem;
+    min-width: 120px;
+  }
+  .contact-form {
+    padding: 2.5rem;
+    max-width: 60vw;
+  }
+  .contact-title {
+    .contact-form {
+      margin: 2rem auto;
+      width: auto;
+      max-width: calc(100vw - 4rem);
+    }
+    font-size: 2.2rem;
+  }
+  .submit-btn {
+    font-size: 1.2rem;
+    padding: 1.2rem 1.5rem;
+  }
+  footer,
+  .footer {
+    font-size: 1.2rem;
+    padding: 1.2rem 0;
+  }
+}
+
 .contact-form input[type="text"],
 .contact-form input[type="email"] {
   border: none;
@@ -68,7 +132,7 @@
   color: brown;
   border-radius: 12px;
   box-shadow: 0 2px 12px rgba(49, 42, 32, 0.08);
-  padding: 1.2rem 2rem;
+  padding: 0.6rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -76,9 +140,22 @@
   min-width: 100px;
   transition: transform 0.2s;
 }
+
+@media (max-width: 768px) {
+  .skill {
+    padding: 0.4rem 0.7rem;
+  }
+}
 .skill i {
-  font-size: 2.2rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  margin-bottom: 0.3rem;
+}
+
+@media (max-width: 768px) {
+  .skill i {
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+  }
 }
 .skill:hover {
   transform: translateY(-8px) scale(1.05);
@@ -231,6 +308,12 @@
 
 .contact-title {
   color: brown;
+  .contact-form {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    width: auto;
+    max-width: calc(100vw - 4rem);
+  }
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
   text-align: center;
@@ -496,5 +579,149 @@ footer {
   footer {
     font-size: 1rem;
     padding: 1rem 0.5rem;
+  }
+}
+
+@media (max-width: 480px), (min-width: 481px) and (max-width: 768px) {
+  .header-content {
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 0.7rem 1rem !important;
+  }
+  .site-title {
+    font-size: 1.2rem;
+    text-align: left;
+  }
+  .nav-list {
+    flex-direction: row !important;
+    gap: 0.7rem !important;
+    align-items: center !important;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+  }
+  .nav-list li a {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .main-header,
+  header {
+    padding: 0.7rem 0.5rem;
+  }
+  .site-title,
+  .lg {
+    font-size: 1.5rem;
+  }
+  .nav-list,
+  ul {
+    gap: 1rem;
+    font-size: 1.1rem;
+  }
+  .about-me {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .me-pic,
+  .proj_pic {
+    width: 80vw;
+    max-width: 250px;
+    height: auto;
+  }
+  .me-ere,
+  .about-subtitle {
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 0 1rem;
+  }
+  .skills-list,
+  .skills {
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: center;
+  }
+  .skill {
+    font-size: 1rem;
+    padding: 1rem 1.2rem;
+    min-width: 90px;
+  }
+  .contact-form {
+    padding: 1rem;
+    max-width: 95vw;
+  }
+  .contact-title {
+    font-size: 1.5rem;
+  }
+  .submit-btn {
+    font-size: 1.05rem;
+    padding: 0.8rem 1.1rem;
+  }
+  footer,
+  .footer {
+    font-size: 1rem;
+    padding: 0.7rem 0;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .main-header,
+  header {
+    padding: 1rem 1.5rem;
+  }
+  .site-title,
+  .lg {
+    font-size: 1.8rem;
+  }
+  .nav-list,
+  ul {
+    gap: 1.5rem;
+    font-size: 1.2rem;
+  }
+  .about-me {
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+  }
+  .me-pic,
+  .proj_pic {
+    width: 350px;
+    max-width: 40vw;
+    height: auto;
+  }
+  .me-ere,
+  .about-subtitle {
+    font-size: 1.3rem;
+    text-align: left;
+    padding: 0 2rem;
+  }
+  .skills-list,
+  .skills {
+    flex-direction: row;
+    gap: 1.2rem;
+    justify-content: center;
+  }
+  .skill {
+    font-size: 1.1rem;
+    padding: 1.2rem 1.5rem;
+    min-width: 100px;
+  }
+  .contact-form {
+    padding: 2rem;
+    max-width: 70vw;
+  }
+  .contact-title {
+    font-size: 2rem;
+  }
+  .submit-btn {
+    font-size: 1.1rem;
+    padding: 1rem 1.2rem;
+  }
+  footer,
+  .footer {
+    font-size: 1.1rem;
+    padding: 1rem 0;
   }
 }

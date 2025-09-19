@@ -1,68 +1,3 @@
-@media (min-width: 1025px) and (max-width: 1280px) {
-  .main-header,
-  header {
-    padding: 1.2rem 2rem;
-  }
-  .site-title,
-  .lg {
-    font-size: 2rem;
-  }
-  .nav-list,
-  ul {
-    gap: 2rem;
-    font-size: 1.3rem;
-  }
-  .about-me {
-    flex-direction: row;
-    gap: 2.5rem;
-    justify-content: center;
-  }
-  .me-pic,
-  .proj_pic {
-    width: 400px;
-    max-width: 35vw;
-    height: auto;
-  }
-  .me-ere,
-  .about-subtitle {
-    font-size: 1.5rem;
-    text-align: left;
-    padding: 0 2.5rem;
-  }
-  .skills-list,
-  .skills {
-    flex-direction: row;
-    gap: 1.5rem;
-    justify-content: center;
-  }
-  .skill {
-    font-size: 1.2rem;
-    padding: 1.5rem 2rem;
-    min-width: 120px;
-  }
-  .contact-form {
-    padding: 2.5rem;
-    max-width: 60vw;
-  }
-  .contact-title {
-    .contact-form {
-      margin: 2rem auto;
-      width: auto;
-      max-width: calc(100vw - 4rem);
-    }
-    font-size: 2.2rem;
-  }
-  .submit-btn {
-    font-size: 1.2rem;
-    padding: 1.2rem 1.5rem;
-  }
-  footer,
-  .footer {
-    font-size: 1.2rem;
-    padding: 1.2rem 0;
-  }
-}
-
 .contact-form input[type="text"],
 .contact-form input[type="email"] {
   border: none;
@@ -92,6 +27,15 @@
     width: 70vw;
     height: auto;
     max-width: 300px;
+  }
+  .me-pic,
+  .proj_pic {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    border-radius: 16px;
+    display: block;
+    margin: 0 auto;
   }
   .me-ere {
     text-align: center;
@@ -132,7 +76,7 @@
   color: brown;
   border-radius: 12px;
   box-shadow: 0 2px 12px rgba(49, 42, 32, 0.08);
-  padding: 0.6rem 1rem;
+  padding: 1.2rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -140,22 +84,9 @@
   min-width: 100px;
   transition: transform 0.2s;
 }
-
-@media (max-width: 768px) {
-  .skill {
-    padding: 0.4rem 0.7rem;
-  }
-}
 .skill i {
-  font-size: 1.5rem;
-  margin-bottom: 0.3rem;
-}
-
-@media (max-width: 768px) {
-  .skill i {
-    font-size: 1.2rem;
-    margin-bottom: 0.2rem;
-  }
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
 }
 .skill:hover {
   transform: translateY(-8px) scale(1.05);
@@ -201,6 +132,15 @@
   .proj_pic {
     width: 90vw;
     max-width: 320px;
+  }
+  .me-pic,
+  .proj_pic {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    border-radius: 18px;
+    display: block;
+    margin: 0 auto;
   }
 }
 
@@ -297,13 +237,14 @@
 }
 
 .contact-container {
+  height: 100vh;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background: rgba(49, 42, 32, 0.95);
-  padding: 40px 10px 80px 10px;
+  padding: 0;
 }
 
 .contact-title {
@@ -323,12 +264,12 @@
   background: #fff;
   border-radius: 16px;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
-  padding: 2rem 2.5rem;
+  padding: 1rem 1.2rem;
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: 0.7rem;
   width: 100%;
-  max-width: 400px;
+  max-width: 350px;
 }
 
 .form-group {
@@ -723,5 +664,69 @@ footer {
   .footer {
     font-size: 1.1rem;
     padding: 1rem 0;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .main-header,
+  header {
+    padding: 1.2rem 2rem;
+  }
+  .site-title,
+  .lg {
+    font-size: 2rem;
+  }
+  .nav-list,
+  ul {
+    gap: 2rem;
+    font-size: 1.3rem;
+  }
+  .about-me {
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: center;
+  }
+  .me-pic,
+  .proj_pic {
+    width: 400px;
+    max-width: 35vw;
+    height: auto;
+  }
+  .me-ere,
+  .about-subtitle {
+    font-size: 1.5rem;
+    text-align: left;
+    padding: 0 2.5rem;
+  }
+  .skills-list,
+  .skills {
+    flex-direction: row;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  .skill {
+    font-size: 1.2rem;
+    padding: 1.5rem 2rem;
+    min-width: 120px;
+  }
+  .contact-form {
+    padding: 2.5rem;
+    max-width: 60vw;
+  }
+  .contact-title {
+    .contact-form {
+      margin: 2rem auto;
+      width: auto;
+      max-width: calc(100vw - 4rem);
+    }
+    font-size: 2.2rem;
+  }
+  .submit-btn {
+    font-size: 1.2rem;
+    padding: 1.2rem 1.5rem;
+  }
+  footer,
+  .footer {
+    font-size: 1.2rem;
+    padding: 1.2rem 0;
   }
 }

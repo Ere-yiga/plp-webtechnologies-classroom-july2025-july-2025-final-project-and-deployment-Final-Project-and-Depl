@@ -3,12 +3,10 @@ document.addEventListener("DOMContentLoaded", function () {
   if (!form) return;
 
   form.addEventListener("submit", function (e) {
-
     const errors = form.querySelectorAll(".error-message");
     errors.forEach((err) => err.remove());
 
     let valid = true;
-
     const nameInput = form.querySelector('input[type="text"]');
     if (!nameInput.value.trim()) {
       showError(nameInput, "Name is required");
@@ -26,7 +24,6 @@ document.addEventListener("DOMContentLoaded", function () {
       showError(messageInput, "Message cannot be empty");
       valid = false;
     }
-
     if (!valid) {
       e.preventDefault();
     }
@@ -41,7 +38,6 @@ document.addEventListener("DOMContentLoaded", function () {
     error.textContent = message;
     input.parentNode.appendChild(error);
   }
-
   function validateEmail(email) {
     return /^\S+@\S+\.\S+$/.test(email);
   }
